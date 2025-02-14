@@ -1,0 +1,46 @@
+name: Technodruidic CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  summon-nature-spirit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Invoke the Elders of the Repository
+        uses: actions/checkout@v4
+
+      - name: Whisper to the Cosmic Forces
+        run: echo "🌿 The code whispers like wind through the ancient trees... 🌿"
+
+      - name: Align with the Celestial Clock
+        run: |
+          echo "🔮 The current cosmic timestamp is:"
+          date
+
+      - name: Seek Guidance from the Forest Guardians
+        run: |
+          echo "🍃 System wisdom revealed:" 
+          uname -a
+
+      - name: Carve Runes of Success
+        run: |
+          echo "ᛉ ᛃ ᚨ ᚠ ᛟ Your workflow is blessed by the spirits of automation. ᛟ ᚠ ᚨ ᛃ ᛉ"
+
+      - name: Build the Sacred Web Page
+        run: |
+          mkdir public
+          echo "<html><body><h1>🌿 Welcome to the Technodruidic Realm 🌿</h1></body></html>" > public/index.html
+
+      - name: Deploy with the Winds of Change
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: public
+
+      - name: Perform the Ritual of Completion
+        run: echo "🌌 The circle is complete. The code is strong. 🌌"
