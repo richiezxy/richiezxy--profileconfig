@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cybertemple Observatory</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="window">
+      <div class="titlebar">🜂 cybertemple://observatory-window — digital window into their dimension</div>
+      <nav class="tabs" aria-label="Cybertemple tabs">
+        <button class="tab-btn active" data-tab="dashboard-panel">Dashboard</button>
+        <button class="tab-btn" data-tab="matrix-panel">Matrix Rainfall</button>
+        <button class="tab-btn" data-tab="ritual-panel">Ritual Log</button>
+      </nav>
+
+      <section id="dashboard-panel" class="panel active" aria-label="Cybertemple dashboard">
+        <div class="grid">
+          <article class="card span-3">
+            <h3>Portal Uptime</h3>
+            <div class="metric" id="uptime">00:00:00</div>
+            <div class="sub">Since ritual boot sequence</div>
+          </article>
+          <article class="card span-3">
+            <h3>Aether Throughput</h3>
+            <div class="metric" id="throughput">0.00 TU/s</div>
+            <div class="sub">Temple units per second</div>
+          </article>
+          <article class="card span-3">
+            <h3>Sigil Integrity</h3>
+            <div class="metric" id="integrity">100.00%</div>
+            <div class="sub">Rune lattice cohesion</div>
+          </article>
+          <article class="card span-3">
+            <h3>Realm Status</h3>
+            <div class="metric" id="realm">STABLE</div>
+            <div class="sub">Digital veil condition</div>
+          </article>
+
+          <article class="card span-8">
+            <h3>Subsystem Resonance</h3>
+            <div class="bar-wrap">
+              <div class="sub">Compiler Grove</div><div class="bar"><span id="bar1"></span></div>
+              <div class="sub">CI Altar</div><div class="bar"><span id="bar2"></span></div>
+              <div class="sub">Terminal Atrium</div><div class="bar"><span id="bar3"></span></div>
+              <div class="sub">Arcane Linter</div><div class="bar"><span id="bar4"></span></div>
+            </div>
+          </article>
+
+          <article class="card span-4">
+            <h3>Host Glyphs</h3>
+            <div class="sub" id="host">Loading host runes…</div>
+            <div class="sub" id="ua" style="margin-top:8px;"></div>
+          </article>
+
+          <article class="card span-12">
+            <h3>Temple Event Stream</h3>
+            <div id="events" class="events"></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="matrix-panel" class="panel" aria-label="Matrix rainfall tab">
+        <canvas id="matrix" width="1160" height="560"></canvas>
+      </section>
+
+      <section id="ritual-panel" class="panel" aria-label="Ritual log tab"></section>
+
+      <div class="footer">Standalone cybertemple program artifact. Open directly, or run the workflow to package under <code>public/</code>.</div>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
