@@ -1,19 +1,12 @@
-# Cybertemple Observatory
+# Richie ZXY // Profile Config
 
-This repo now includes a standalone web interface under `cybertemple/` so you can work with a real UI (not only workflow YAML):
+Welcome to the **Cybertemple Archive**.
 
-- `cybertemple/index.html`
-- `cybertemple/styles.css`
-- `cybertemple/app.js`
+This profile is configured as a short, interlinked story told in four text files:
 
-## Run locally
+1. [I. Boot Sequence](./story-01-boot.md)
+2. [II. Sigil Lattice](./story-02-sigil.md)
+3. [III. The Observatory Window](./story-03-observatory.md)
+4. [IV. Crystal Ledger](./story-04-ledger.md)
 
-```bash
-python -m http.server 8000 --bind 0.0.0.0
-```
-
-Open `http://127.0.0.1:8000/cybertemple/`.
-
-## Workflow behavior
-
-The `003.yml` workflow remains manual-only and now packages this UI by copying `cybertemple/*` into `public/`.
+Start at Chapter I and follow the links at the bottom of each file.
