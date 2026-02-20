@@ -7,38 +7,32 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div id="ambient-orbs"></div>
     <main class="window">
-      <div class="titlebar">
-        <span>🜂 cybertemple://observatory-window — digital window into their dimension</span>
-        <span class="status-pill" id="temple-mood">Mood: EUPHORIC</span>
-      </div>
-
+      <div class="titlebar">🜂 cybertemple://observatory-window — digital window into their dimension</div>
       <nav class="tabs" aria-label="Cybertemple tabs">
         <button class="tab-btn active" data-tab="dashboard-panel">Dashboard</button>
-        <button class="tab-btn" data-tab="market-panel">Wonder Aisle</button>
         <button class="tab-btn" data-tab="matrix-panel">Matrix Rainfall</button>
         <button class="tab-btn" data-tab="ritual-panel">Ritual Log</button>
       </nav>
 
       <section id="dashboard-panel" class="panel active" aria-label="Cybertemple dashboard">
         <div class="grid">
-          <article class="card span-3 pulse">
+          <article class="card span-3">
             <h3>Portal Uptime</h3>
             <div class="metric" id="uptime">00:00:00</div>
             <div class="sub">Since ritual boot sequence</div>
           </article>
-          <article class="card span-3 pulse">
+          <article class="card span-3">
             <h3>Aether Throughput</h3>
             <div class="metric" id="throughput">0.00 TU/s</div>
             <div class="sub">Temple units per second</div>
           </article>
-          <article class="card span-3 pulse">
+          <article class="card span-3">
             <h3>Sigil Integrity</h3>
             <div class="metric" id="integrity">100.00%</div>
             <div class="sub">Rune lattice cohesion</div>
           </article>
-          <article class="card span-3 pulse">
+          <article class="card span-3">
             <h3>Realm Status</h3>
             <div class="metric" id="realm">STABLE</div>
             <div class="sub">Digital veil condition</div>
@@ -58,44 +52,12 @@
             <h3>Host Glyphs</h3>
             <div class="sub" id="host">Loading host runes…</div>
             <div class="sub" id="ua" style="margin-top:8px;"></div>
-            <div class="sub" id="chaos-level" style="margin-top:8px; color: var(--amber)">Chaos index: calibrating...</div>
           </article>
 
-          <article class="card span-6">
+          <article class="card span-12">
             <h3>Temple Event Stream</h3>
             <div id="events" class="events"></div>
           </article>
-
-          <article class="card span-6 mini-terminal">
-            <h3>Oracle Terminal</h3>
-            <div id="terminal-log" class="terminal-log"></div>
-            <div class="terminal-input-row">
-              <label class="sub" for="oracle-input">oracle@cybertemple:~$</label>
-              <input id="oracle-input" type="text" placeholder="type summon, pulse, glitch, bless" />
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="market-panel" class="panel" aria-label="Wonder aisle interactive panel">
-        <div class="market-wrap">
-          <div class="market-header">
-            <h2>Wonder Aisle // Omega Shrine</h2>
-            <p>Click objects to trigger weird effects + earn delight points.</p>
-          </div>
-          <div class="product-grid" id="product-grid"></div>
-          <div class="scoreboard">
-            <div class="score-item">
-              <div class="sub">Delight Score</div>
-              <div class="metric" id="delight-score">0</div>
-            </div>
-            <div class="score-item">
-              <div class="sub">Anomalies Triggered</div>
-              <div class="metric" id="anomaly-count">0</div>
-            </div>
-            <button id="ritual-randomizer" class="action-btn">Trigger Random Phenomenon</button>
-          </div>
-          <div id="anomaly-banner" class="anomaly-banner">Anomaly channel online.</div>
         </div>
       </section>
 
@@ -105,7 +67,7 @@
 
       <section id="ritual-panel" class="panel" aria-label="Ritual log tab"></section>
 
-      <div class="footer">Standalone living cybertemple artifact — playful, dynamic, and totally isolated.</div>
+      <div class="footer">Standalone cybertemple program artifact. Open directly, or run the workflow to package under <code>public/</code>.</div>
     </main>
 
     <script src="./app.js"></script>
